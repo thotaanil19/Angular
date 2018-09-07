@@ -1,0 +1,23 @@
+<p>
+  job-runner works!
+</p>
+
+<div>
+<select id='source' multiple='multiple'  (change) = "addJob($event)">
+  <option value='{{job.id}}' *ngFor = "let job of jobs1">{{job.name}}
+  </option>
+</select>
+
+<span>&#8596;</span>
+
+ 
+<select id='dest' multiple='multiple' (change) = "removeJob($event)">
+  <option value='{{job.id}}' *ngFor = "let job of jobs2" >{{job.name}}
+  </option>
+</select>
+
+
+
+ 
+
+<div>
